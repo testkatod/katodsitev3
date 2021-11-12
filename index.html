@@ -15,7 +15,7 @@
             <img src="img/logo-katod.png" alt="" class="logo">
             <ul class="primary-nav">
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">О компании</a></li>
                 <li><a href="#">Работа в компании</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -344,19 +344,26 @@
         document.querySelector(".right-control").onclick = function() {
             let i = document.querySelector(".active").dataset.index;
             let background = document.querySelectorAll('.background');
-          //  background[i].classList.add('animate__slideOutLeft');
-            background[i].classList.remove('active', 'absolute');
+            background[i].classList.add('animate__slideOutLeft');
+            background[i].classList.remove('active');
             if (i == background.length-1) {
                 i = 0;
+                background[i].classList.remove('animate__slideOutLeft');
+                for (let a = 0; a < background.length; a++) {
+                    background[a].classList.remove('animate__slideInRight');
+                }
+                for (let a = 0; a < background.length-1; a++) {
+                    background[a].classList.remove('animate__slideOutLeft', 'absolute');
+                }
             } else {
                 i++;
             };
-            let a = i+1;
-            let b = i-1;
-            background[i].classList.add('active', 'absolute');
-           // background[b].classList.remove('animate__slideInLeft');
-          //  background[a].classList.remove('animate__slideOutLeft');
-
+            if (i == background.length-2) {
+                let a = i+1;
+                background[a].classList.remove('animate__slideOutLeft', 'absolute');
+            }
+            background[i].classList.add('animate__slideInRight', 'absolute');
+            background[i].classList.add('active');
         }
     })
 
