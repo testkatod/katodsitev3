@@ -1,0 +1,355 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  z-index: -1;
+}
+
+.header {
+  font-size: 2em;
+  font-weight: 400;
+  z-index: 5;
+}
+
+.section-header {
+  font-weight: 800;
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+.section-subheader {
+  color: #013601;
+}
+
+.subheader-line {
+  height: 2px;
+  background-color: rgba(0, 255, 98, 0.5);
+  margin: 2em 0;
+}
+
+.block-header {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.section-subheader {
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 800;
+  color: #9c9c9c;
+}
+
+.btn {
+  text-decoration: none;
+  color: green;
+}
+
+.btn img {
+  width: 15px;
+  margin-top: auto;
+}
+
+.text {
+  font-weight: 300;
+}
+
+.background {
+  width: 100vw;
+  height: 25em;
+}
+
+.background-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20em;
+  z-index: 0;
+}
+
+.bg-first {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/slider1-min.jpg");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/slider1-min.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+  width: 100vw;
+}
+
+.bg-second {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/7474-1.jpg");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/7474-1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+.bg-third {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/BRD_0320-min.jpg");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/BRD_0320-min.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+.bg-forth {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/45634-min.png");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/45634-min.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+.active {
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
+.absolute {
+  position: absolute;
+  z-index: -1;
+}
+
+section.home-screen .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+section.home-screen .navbar .logo {
+  width: 70px;
+  height: 70px;
+}
+
+section.home-screen .primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.home-screen .primary-nav li {
+  list-style-type: none;
+  padding: 1em 2em;
+}
+
+section.home-screen .primary-nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+section.home-screen .language-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.home-screen .language-block .icon {
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+}
+
+section.home-screen .language-block .language-selector {
+  font-size: 1em;
+  margin: auto 0;
+}
+
+section.home-screen .hero-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  margin-top: -1.5em;
+  z-index: 100;
+  margin-bottom: 10em;
+}
+
+section.home-screen .hero-header .section-header {
+  color: white;
+  margin: 0;
+}
+
+section.home-screen .hero-header .section-header span {
+  color: #013601;
+}
+
+section.home-screen .hero-header .icon-control {
+  width: 70px;
+  z-index: 100;
+}
+
+section.home-screen .hero-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 1em 0;
+}
+
+section.home-screen .hero-body .text {
+  font-size: 2em;
+  margin: 0;
+}
+
+.catalog_block_wrapper {
+  position: relative;
+  padding: 4em 0;
+}
+
+.catalog_block__counter {
+  position: absolute;
+  margin: 0;
+  font-size: 18em;
+  right: 0;
+  color: rgba(68, 68, 68, 0.2);
+}
+
+.catalog_block_tube {
+  background: rgba(0, 255, 98, 0.5);
+}
+
+.catalog_block_nvd {
+  background: rgba(73, 2, 52, 0.5);
+}
+
+.catalog_block_pmt {
+  background: rgba(2, 69, 192, 0.5);
+}
+
+.catalog_block_equip {
+  background: rgba(0, 177, 162, 0.5);
+}
+
+.catalog_block__header {
+  margin: 1em 0;
+  font-size: 6.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+}
+
+.catalog_block__header span {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.catalog_block__front_image {
+  position: absolute;
+  width: 400px;
+  right: 425px;
+  top: 150px;
+  opacity: 90%;
+}
+
+.catalog_block__front_image_nvd {
+  width: 600px;
+  right: 300px;
+}
+
+.catalog_block__front_image_pmt {
+  width: 400px;
+}
+
+.catalog_block__front_image_equip {
+  width: 550px;
+  right: 300px;
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(87, 87, 87, 0.8))), url("../img/BRD_0320-min — copy.jpg");
+  background: linear-gradient(black, rgba(87, 87, 87, 0.8)), url("../img/BRD_0320-min — copy.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 2em 0;
+}
+
+footer .wrapper .icon {
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  margin-right: 1em;
+}
+
+footer .wrapper .logo {
+  width: 80px;
+}
+
+footer .wrapper .left-col, footer .wrapper .right-col, footer .wrapper .contact-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .wrapper .contact-block {
+  padding: 0 2em;
+}
+
+footer .wrapper .contact-block h3 {
+  text-transform: lowercase;
+}
+
+footer .wrapper .right-col h3, footer .wrapper .left-col h3 {
+  font-size: 1.5em;
+}
+
+footer .wrapper h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+footer .wrapper .left-col h3 {
+  text-transform: uppercase;
+}
+
+footer .wrapper ul {
+  padding-left: 0;
+}
+
+footer .wrapper ul li {
+  list-style-type: none;
+  padding: 0.2em 0;
+}
+
+footer .wrapper ul li a {
+  text-decoration: none;
+  color: #b4b4b4;
+}
+
+footer .wrapper .address {
+  width: 30%;
+}
+
+footer .wrapper .address .text {
+  color: #b4b4b4;
+}
+
+footer .contact-body {
+  padding: 5em 0;
+}
+/*# sourceMappingURL=catalog.css.map */
